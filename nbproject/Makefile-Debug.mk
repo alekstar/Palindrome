@@ -64,26 +64,26 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/palindrome.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/palindrome_git.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/palindrome.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/palindrome_git.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/palindrome ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/palindrome_git ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 ${OBJECTDIR}/src/Palindrome.o: src/Palindrome.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
-	${RM} $@.d
-	$(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Palindrome.o src/Palindrome.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Palindrome.o src/Palindrome.cpp
 
 ${OBJECTDIR}/src/StringServices.o: src/StringServices.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
-	${RM} $@.d
-	$(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/StringServices.o src/StringServices.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/StringServices.o src/StringServices.cpp
 
 # Subprojects
 .build-subprojects:
@@ -97,20 +97,20 @@ ${TESTDIR}/TestFiles/f1: ${TESTDIR}/tests/TestStringPalindrome.o ${TESTDIR}/test
 
 ${TESTDIR}/tests/TestStringPalindrome.o: tests/TestStringPalindrome.cpp 
 	${MKDIR} -p ${TESTDIR}/tests
-	${RM} $@.d
-	$(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -I. -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -MMD -MP -MF $@.d -o ${TESTDIR}/tests/TestStringPalindrome.o tests/TestStringPalindrome.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -I. -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -MMD -MP -MF "$@.d" -o ${TESTDIR}/tests/TestStringPalindrome.o tests/TestStringPalindrome.cpp
 
 
 ${TESTDIR}/tests/TestStringServices.o: tests/TestStringServices.cpp 
 	${MKDIR} -p ${TESTDIR}/tests
-	${RM} $@.d
-	$(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -I. -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -MMD -MP -MF $@.d -o ${TESTDIR}/tests/TestStringServices.o tests/TestStringServices.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -I. -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -MMD -MP -MF "$@.d" -o ${TESTDIR}/tests/TestStringServices.o tests/TestStringServices.cpp
 
 
 ${TESTDIR}/tests/TestVectorPalindrome.o: tests/TestVectorPalindrome.cpp 
 	${MKDIR} -p ${TESTDIR}/tests
-	${RM} $@.d
-	$(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -I. -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -MMD -MP -MF $@.d -o ${TESTDIR}/tests/TestVectorPalindrome.o tests/TestVectorPalindrome.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -I. -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -MMD -MP -MF "$@.d" -o ${TESTDIR}/tests/TestVectorPalindrome.o tests/TestVectorPalindrome.cpp
 
 
 ${OBJECTDIR}/main_nomain.o: ${OBJECTDIR}/main.o main.cpp 
@@ -120,8 +120,8 @@ ${OBJECTDIR}/main_nomain.o: ${OBJECTDIR}/main.o main.cpp
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
-	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/main_nomain.o main.cpp;\
+	    ${RM} "$@.d";\
+	    $(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -Dmain=__nomain -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main_nomain.o main.cpp;\
 	else  \
 	    ${CP} ${OBJECTDIR}/main.o ${OBJECTDIR}/main_nomain.o;\
 	fi
@@ -133,8 +133,8 @@ ${OBJECTDIR}/src/Palindrome_nomain.o: ${OBJECTDIR}/src/Palindrome.o src/Palindro
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
-	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Palindrome_nomain.o src/Palindrome.cpp;\
+	    ${RM} "$@.d";\
+	    $(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -Dmain=__nomain -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Palindrome_nomain.o src/Palindrome.cpp;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/Palindrome.o ${OBJECTDIR}/src/Palindrome_nomain.o;\
 	fi
@@ -146,8 +146,8 @@ ${OBJECTDIR}/src/StringServices_nomain.o: ${OBJECTDIR}/src/StringServices.o src/
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
-	    ${RM} $@.d;\
-	    $(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -Dmain=__nomain -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/StringServices_nomain.o src/StringServices.cpp;\
+	    ${RM} "$@.d";\
+	    $(COMPILE.cc) -g -I../../gtest-1.7.0 -I../../gtest-1.7.0/include -Dmain=__nomain -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/StringServices_nomain.o src/StringServices.cpp;\
 	else  \
 	    ${CP} ${OBJECTDIR}/src/StringServices.o ${OBJECTDIR}/src/StringServices_nomain.o;\
 	fi
@@ -164,7 +164,7 @@ ${OBJECTDIR}/src/StringServices_nomain.o: ${OBJECTDIR}/src/StringServices.o src/
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/palindrome.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/palindrome_git.exe
 
 # Subprojects
 .clean-subprojects:

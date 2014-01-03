@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=MinGW-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/MinGW-Windows
-CND_ARTIFACT_NAME_Debug=palindrome
-CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/palindrome
+CND_ARTIFACT_NAME_Debug=palindrome_git
+CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/palindrome_git
 CND_PACKAGE_DIR_Debug=dist/Debug/MinGW-Windows/package
-CND_PACKAGE_NAME_Debug=palindrome.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/palindrome.tar
+CND_PACKAGE_NAME_Debug=palindromegit.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/palindromegit.tar
 # Release configuration
 CND_PLATFORM_Release=MinGW-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/MinGW-Windows
-CND_ARTIFACT_NAME_Release=palindrome
-CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/palindrome
+CND_ARTIFACT_NAME_Release=palindrome_git
+CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/palindrome_git
 CND_PACKAGE_DIR_Release=dist/Release/MinGW-Windows/package
-CND_PACKAGE_NAME_Release=palindrome.tar
-CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/palindrome.tar
+CND_PACKAGE_NAME_Release=palindromegit.tar
+CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/palindromegit.tar
 #
 # include compiler specific variables
 #
