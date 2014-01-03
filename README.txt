@@ -1,4 +1,4 @@
-This is a function library of function which defines if vector or string is palindrome.
+This is a function library of functions which defines if vector or string is palindrome.
 
 Author of code: Aleksandr Tarasenko <inet.tarasenko@gmail.com>
 Repository URL: https://github.com/alekstar/Palindrome
